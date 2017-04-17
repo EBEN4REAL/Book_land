@@ -1,0 +1,31 @@
+*,*:before,*:after{box-sizing:border-box;}
+
+.navbar{
+    margin-bottom: 0;
+    background-color:transparent;
+    z-index:3;
+    position:fixed;
+    width:100%;
+    border:0.25px solid rgba(127,140,141,0.1);
+}
+
+.navbar-brand{
+    background-image: url(../images/bookeyWebsite_logo_v2.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    width:225px;
+}
+.navbar .navbar-brand{
+    color:#fff;
+}
+.navbar .navbar-brand:hover{
+     color:rgb(127,140,141);
+}
+
+/*cannot figure this out yet why does it not change to the initial at 330pxand below */
+@media only screen and (max-width:330px){
+    .navbar{
+        background-color:initial;
+     }
+} 
+
